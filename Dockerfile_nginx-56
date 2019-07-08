@@ -107,6 +107,7 @@ RUN ( \
       echo 'session.use_trans_sid=0' ; \
       echo 'display_errors=stderr' ; \
       echo 'display_startup_errors=On' ; \
+      echo 'date.timezone=${TZ}' ; \
     ) > /usr/local/etc/php/conf.d/tuning.ini ; \
     ( \
       echo '[www]' ; \
